@@ -1,0 +1,14 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "New information (coming soon)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "author": "Habib Mohammadi",
+  "license": "ISC"
+}
