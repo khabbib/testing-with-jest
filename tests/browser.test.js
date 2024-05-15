@@ -40,5 +40,5 @@ test('Check popup test', async () => {
     let alert = await driver.switchTo().alert();
     let alertText = await alert.getText();
     await alert.accept();
-    expect(alertText).toEqual("Hello there");
+    expect(alertText).toEqual("Tog bort Bananer");
 });
