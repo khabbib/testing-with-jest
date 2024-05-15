@@ -33,12 +33,12 @@ describe('Clicking "Pusha till stacken"', () => {
 	});
 });
 
-// Egen test
-test('By clicking on "Poppa stacken!" it should delete the last item', async () => {
-	let pop = await driver.findElement(By.id('pop'));
-	await pop.click();
-	let alert = await driver.switchTo().alert();
-	let alertText = await alert.getText();
-	await alert.accept();
-	expect(alertText).toEqual("Tog bort Bananer"); // medvetet fel, sista stacken bör vara "Bananer"
+// Browser test
+test('Check popup test', async () => {
+    let pop = await driver.findElement(By.id('pop'));
+    await pop.click();
+    let alert = await driver.switchTo().alert();
+    let alertText = await alert.getText();
+    await alert.accept();
+    expect(alertText).toEqual("Hello there");
 });

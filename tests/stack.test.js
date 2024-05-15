@@ -18,5 +18,11 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBe(42);
 });
 
-
-// Eget test
+// Egen test
+test('Check empty input', () => {
+    stack.push(10);
+    stack.push("check for empty input");
+    stack.push(null);
+    expect(stack.peek()).toBeDefined();
+    expect(stack.peek()).toBe("");
+});
