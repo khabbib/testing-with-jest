@@ -1,7 +1,6 @@
 import * as stack from './stack.js';
 
 window.onload = function () {
-    console.log("done");
 
     var pop = document.getElementById('pop');
     var push = document.getElementById('push');
